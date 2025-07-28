@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>TodoJS</title>
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300&display=swap" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
 
 
 	<style>
-		body, button, input{
-			font-family:'Roboto', sans-serif;
+		body,
+		button,
+		input,
+		p {
+			font-family: 'Roboto', sans-serif;
+
 		}
-		
 	</style>
 </head>
+
 <body>
-	<div id="app">
-	<ul>
+	<div class="container">
+		<div id="app">
+			<ul>
 
-	</ul>
-	<input type="text" name="todoText" placeholder="Digite um todo">
-	<button>Adicionar todo</button>
+			</ul>
 
-</div>
+
+			<div class="input-group input-group-lg">
+				<span class="input-group-text" id="inputGroup-sizing-lg">Tarefa</span>
+				<input type="text" name="todoText" class="form-control" aria-label="ad"
+					aria-describedby="inputGroup-sizing-lg" placeholder="Ex: Beber água ás 12:00hrs">
+				<button class="btn btn-success">Adicionar tarefa</button>
+
+			</div>
+
+		</div>
+	</div>
 
 
 
 	<script src="todos.js"></script>
+	<sript href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" />
 
 </body>
+
 </html>

@@ -4,8 +4,7 @@ var buttonElement = document.querySelector('#app button');
 
 var todos = [
 	'Tomar café',
-	'Estudar Javascript',
-	'Estudar PHP'
+	'Dar bom-dia pro meu gato',
 	];
 
 function renderTodos(){
@@ -23,10 +22,11 @@ function renderTodos(){
 		var pos = todos.indexOf(todo);
 		linkElement.setAttribute('onclick', 'deleteTodo(' + pos + ')');
 
-		var linkText = document.createTextNode('Excluir');
+		var linkText = document.createTextNode('Apagar tarefa');
 
 
 		linkElement.appendChild(linkText);
+		
 		todoElement.appendChild(todoText);
 		todoElement.appendChild(linkElement);
 		listElement.appendChild(todoElement);
