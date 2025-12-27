@@ -22,17 +22,36 @@
 <body>
 	<div class="container">
 		<div id="app">
-		<br/>
+			<br />
 			<div class="input-group input-group-lg">
 				<span class="input-group-text" id="inputGroup-sizing-lg">Tarefa</span>
 				<input type="text" name="todoText" class="form-control" aria-label="ad"
-					aria-describedby="inputGroup-sizing-lg" placeholder="Ex: Beber água ás 12:00hrs">
-				<button class="btn btn-success">Adicionar tarefa</button>
+					aria-describedby="inputGroup-sizing-lg" placeholder="Ex: Beber água ás 12:00hrs" />
+				<br />
+
+
+				<div class="input-group input-group-lg">
+					<select class="form-select" aria-label="Default select example">
+						<option selected>Categoria da Tarefa</option>
+						<option value="1">Trabalho</option>
+						<option value="2">Estudo</option>
+						<option value="3">Lazer</option>
+					</select>
+						<button class="btn btn-success ">+ </button>
+				</div>
+
+				<div>
+					<div class="d-grid justify-center" role="group">
+						Ad: Domine Javascript
+					</div>
+				</div>
 			</div>
 
-			<br/>
 
-				<ul class="list-group list-group-flush">
+
+			<br />
+
+			<ul class="list-group list-group-numbered">
 			</ul>
 
 
